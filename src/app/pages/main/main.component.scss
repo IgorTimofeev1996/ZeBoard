@@ -1,0 +1,30 @@
+.colums {
+  background-color: #CDEAFB;
+  height: min(1500px);
+
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  max-width: 1620px;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  height: 118px;
+  width: 500px;
+  border-radius: 10px;
+
+  background: #ACCDFF;
+
+}
+
+p {
+  font-family: Montserrat;
+  font-size: 40px;
+  color: white;
+}

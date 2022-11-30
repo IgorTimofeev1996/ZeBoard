@@ -1,0 +1,28 @@
+<header>
+    <div class="navigation">
+       <div class="logo-title">
+            <div class="logo">
+              <img src="/assets/Vector (1).png" alt="images-logo">
+              <img src="">
+            </div>
+           <img class="ze-title" src="/assets/Ze.png">
+           <img class="board-title" src="/assets/Board.png">
+       </div>
+        <div class="btn">
+            <button class="btn-create-column" type="button" (click)="ModalCreateColumnComponent = true">Create column</button>
+             <app-modal-create-column
+             *ngIf="ModalCreateColumnComponent"
+             (close)="ModalCreateColumnComponent = false"
+             >
+
+             </app-modal-create-column>
+
+          <button class="btn-create-task" type="button" (click)="ModalCreateTaskComponent = true">Create task</button>
+          <app-modal-create-task
+          *ngIf="ModalCreateTaskComponent"
+            (close)="ModalCreateTaskComponent = false">
+          </app-modal-create-task>
+
+        </div>
+    </div>
+</header>
