@@ -1,0 +1,19 @@
+<div class="backdrop"></div>
+
+<form class="modal" [formGroup]="myform" (ngSubmit)="onSubmit()" >
+  <h3>Create column</h3>
+  <div class="form-name">
+     <label>Name</label><br>
+    <input fo type="text" formControlName = 'name'/>
+  </div>
+
+
+  <div class="btn">
+    <button class="btn-create" type="submit"
+            (click)="onSubmit()"
+            (click)="close.emit()" >Add</button>
+    <button class="btn-close" type="button" (click)="close.emit()">Cancel</button>
+    <button (click)="remove()">Revove column</button>
+  </div>
+
+</form>

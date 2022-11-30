@@ -1,0 +1,105 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+.modal {
+  width: 982px;
+  height: 600px;
+
+
+  padding: 0;
+  background: white;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0);
+  border-radius: 10px;
+}
+
+h3 {
+  font-family: Montserrat;
+  font-size: 32px;
+
+  margin-top: 32px;
+  margin-left: 32px;
+  padding: 0;
+}
+
+.form-name {
+  margin-left: 32px;
+}
+
+label {
+  font-family: Montserrat;
+  font-size: 14px;
+  color: #B9B9B9;
+}
+
+input {
+  width: 918px;
+  height: 32px;
+}
+
+.btn {
+  padding: 0;
+  margin-top: 64px;
+  margin-bottom: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+
+.btn-create {
+  width: 200px;
+  height: 40px;
+  left: 1107px;
+  top: 608px;
+  border: 0;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+
+  color: #FFFFFF;
+
+  background: #FC1370;
+  border-radius: 10px;
+}
+
+.btn-close {
+  width: 70px;
+  height: 24px;
+  left: 1349px;
+  top: 615px;
+  border: 0;
+
+  margin-left: 42px;
+  margin-right: 32px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: right;
+  text-decoration: none;
+  background: white;
+
+
+  color: #3F89FC;
+
+}
+
+
+.mat-form-field {
+  margin-right: 12px;
+}

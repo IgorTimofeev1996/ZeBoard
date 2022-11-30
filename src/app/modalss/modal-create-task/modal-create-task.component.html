@@ -1,0 +1,33 @@
+<div class="backdrop"></div>
+
+<form class="modal" [formGroup]="myform" (ngSubmit)="onSubmit()" >
+  <h3>Create task</h3>
+  <div class="form-name">
+    <label>Name</label><br>
+    <input fo type="text" formControlName="name"/>
+  </div>
+
+  <div>
+    <label>Description</label><br>
+    <input fo type="text" formControlName="name"/>
+  </div>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Choose a date</mat-label>
+    <input matInput [matDatepicker]="picker">
+    <mat-hint>MM/DD/YYYY</mat-hint>
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+
+
+
+  <div class="btn">
+    <button class="btn-create" type="submit"
+            (click)="onSubmit()"
+            (click)="close.emit()" >Add</button>
+    <button class="btn-close" type="button" (click)="close.emit()">Cancel</button>
+    <button (click)="remove()">Revove column</button>
+  </div>
+
+</form>
